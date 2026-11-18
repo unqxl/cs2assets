@@ -1,4 +1,4 @@
-name: Market images
+name: Get market images
 
 # Optional upgrade of image links to the Steam economy CDN. Budgeted and rate-limit aware:
 # see src/market.ts. New items without market listings simply stay on the static CDN / self-hosted link.
