@@ -40,7 +40,7 @@ node src/index.ts market --budget=40
 npm run typecheck
 ```
 
-Секреты репозитория: `USERNAME`, `PASSWORD` (аккаунт Steam; в конвейер передаются как `STEAM_USERNAME` / `STEAM_PASSWORD`). Переменная `LANGUAGES` (по умолчанию `en,ru,uk,zh-CN`, либо `all`).
+Загрузка идёт через анонимную сессию Steam (депо CS2 публичное). Необязательные секреты `USERNAME` / `PASSWORD` (передаются как `STEAM_USERNAME` / `STEAM_PASSWORD`) нужны только как запасной вариант, если анонимная загрузка не удалась. Переменная `LANGUAGES` (по умолчанию `en,ru,uk,zh-CN`, либо `all`).
 
 ## Благодарности и лицензии
 

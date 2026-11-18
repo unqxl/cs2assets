@@ -40,7 +40,7 @@ node src/index.ts market --budget=40
 npm run typecheck
 ```
 
-Repository secrets: `USERNAME`, `PASSWORD` (Steam account; exposed to the pipeline as `STEAM_USERNAME` / `STEAM_PASSWORD`). Repository variable `LANGUAGES` (default `en,ru,uk,zh-CN`, or `all`).
+Downloads use an anonymous Steam session (the CS2 depot is public). The optional repository secrets `USERNAME` / `PASSWORD` (exposed as `STEAM_USERNAME` / `STEAM_PASSWORD`) are only a fallback if the anonymous download fails. Repository variable `LANGUAGES` (default `en,ru,uk,zh-CN`, or `all`).
 
 ## Credits and licenses
 

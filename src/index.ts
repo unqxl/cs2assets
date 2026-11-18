@@ -6,7 +6,7 @@ import { decompileImages, listDefaultGenerated, readImages, registerImages } fro
 import { log, timed, writeSummary } from "./log.ts";
 import { resolveFromMarket } from "./market.ts";
 import { credentialsFromEnv, getLatestManifestId, getManifest, login } from "./steam.ts";
-import { readState, writeState } from "./state.ts";
+import { readState, writeState, type State } from "./state.ts";
 import { extractText } from "./text.ts";
 import { archiveShas, downloadArchives, downloadDirectory, planDownloads } from "./vpk.ts";
 
@@ -29,12 +29,22 @@ const check = async () => {
     user.logOff();
 };
 
-const update = async () => {
-    const credentials = credentialsFromEnv();
-    if (!credentials) throw new Error("STEAM_USERNAME and STEAM_PASSWORD are required");
+// Downloads the changed archives. Anonymous sessions can read the public CS2 depot, so no account is required.
+const download = async (user: Awaited<ReturnType<typeof login>>, manifestId: string, previous: State) => {
+    const manifest = await getManifest(user, manifestId);
+    const shas = archiveShas(manifest);
+    const dir = await timed("download pak01_dir.vpk", () => downloadDirectory(user, manifest));
+    const plan = planDownloads(dir, previous, shas, readImages(), options.force, options.skipImages);
 
+    log(`archives to download: ${plan.archives.length} (${plan.archives.join(", ")})`);
+    await timed("download archives", () => downloadArchives(user, manifest, plan.archives));
+
+    return { dir, plan, shas };
+};
+
+const update = async () => {
     const previous = readState();
-    const user = await timed("steam login", () => login(credentials));
+    let user = await timed("steam login (anonymous)", () => login());
     const manifestId = await getLatestManifestId(user);
 
     if (manifestId === previous.manifestId && !options.force) {
@@ -44,14 +54,23 @@ const update = async () => {
         return;
     }
 
-    const manifest = await getManifest(user, manifestId);
-    const shas = archiveShas(manifest);
-    const dir = await timed("download pak01_dir.vpk", () => downloadDirectory(user, manifest));
-    const plan = planDownloads(dir, previous, shas, readImages(), options.force, options.skipImages);
+    let result;
 
-    log(`archives to download: ${plan.archives.length} (${plan.archives.join(", ")})`);
-    await timed("download archives", () => downloadArchives(user, manifest, plan.archives));
+    try {
+        result = await download(user, manifestId, previous);
+    } catch (error) {
+        const credentials = credentialsFromEnv();
+        if (!credentials) throw error;
+
+        log(`anonymous download failed (${error}), retrying with the Steam account`);
+        user.logOff();
+        user = await timed("steam login (account)", () => login(credentials));
+        result = await download(user, manifestId, previous);
+    }
+
     user.logOff();
+
+    const { dir, plan, shas } = result;
 
     await timed("extract text", async () => extractText(dir, plan.text));
 

@@ -18,4 +18,4 @@ CSGO-API, counter-strike-file-tracker and counter-strike-image-tracker forks.
 - Image link waterfall: static CDN (sha1 + HEAD) → self-hosted copy → market upgrade (budgeted, optional). Never sweep the Steam market; stop on the first 429 and persist the cooldown.
 - Use `npm run typecheck` and `npm run format`. Do not compile or bundle anything.
 - Commits: `type(scope): message`, English, no co-authorship lines.
-- Secrets: `USERNAME`, `PASSWORD` (Steam account; mapped to `STEAM_USERNAME`/`STEAM_PASSWORD` in the workflow). Repository variable `LANGUAGES` (default `en,ru,uk,zh-CN`).
+- Steam downloads are anonymous by default (the old trackers did the same); secrets `USERNAME`, `PASSWORD` (mapped to `STEAM_USERNAME`/`STEAM_PASSWORD`) are only a fallback. Repository variable `LANGUAGES` (default `en,ru,uk,zh-CN`).
