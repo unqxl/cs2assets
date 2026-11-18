@@ -1,0 +1,7 @@
+node_modules
+work
+dist
+*.log
+generator/public/api
+generator/manifestId*.txt
+generator/imagesSha*.txt

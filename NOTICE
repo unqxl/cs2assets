@@ -1,0 +1,14 @@
+cs2assets builds on the work of several open-source projects:
+
+- CSGO-API, counter-strike-file-tracker and counter-strike-image-tracker by ByMykel (MIT).
+  https://github.com/ByMykel/CSGO-API
+  https://github.com/ByMykel/counter-strike-file-tracker
+  https://github.com/ByMykel/counter-strike-image-tracker
+  The API generator in generator/ is a vendored copy of CSGO-API (see generator/LICENSE).
+- csfloat/cs-files (Steam depot download approach used by the trackers). https://github.com/csfloat/cs-files
+- SteamTracking/GameTracking-CS2, used for reference. https://github.com/SteamTracking/GameTracking-CS2
+- ValveResourceFormat / Source2Viewer-CLI for decompiling game textures. https://github.com/ValveResourceFormat/ValveResourceFormat
+- node-steam-user by DoctorMcKay. https://github.com/DoctorMcKay/node-steam-user
+- node-vpk and @node-steam/vdf.
+
+Counter-Strike 2 and all game assets are the property of Valve Corporation.
