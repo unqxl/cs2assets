@@ -34,7 +34,7 @@ const download = async (user: Awaited<ReturnType<typeof login>>, manifestId: str
     const manifest = await getManifest(user, manifestId);
     const shas = archiveShas(manifest);
     const dir = await timed("download pak01_dir.vpk", () => downloadDirectory(user, manifest));
-    const plan = planDownloads(dir, previous, shas, readImages(), options.force, options.skipImages);
+    const plan = planDownloads(dir, previous, shas, readImages(), options.full, options.skipImages);
 
     log(`archives to download: ${plan.archives.length} (${plan.archives.join(", ")})`);
     await timed("download archives", () => downloadArchives(user, manifest, plan.archives));

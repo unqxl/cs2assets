@@ -79,7 +79,8 @@ export const IMAGE_FOLDERS = [
 ].map(folder => `panorama/images/econ/${folder}`);
 
 export interface Options {
-    force: boolean;
+    force: boolean; // ignore "manifest unchanged"
+    full: boolean; // download every archive instead of only changed/unresolved ones
     skipImages: boolean;
     budget: number;
 }
@@ -88,7 +89,8 @@ export const parseOptions = (argv: string[]): Options => {
     const budgetArg = argv.find(arg => arg.startsWith("--budget="));
 
     return {
-        force: argv.includes("--force"),
+        force: argv.includes("--force") || argv.includes("--full"),
+        full: argv.includes("--full"),
         skipImages: argv.includes("--skip-images"),
         budget: budgetArg ? Number(budgetArg.split("=")[1]) : 40,
     };

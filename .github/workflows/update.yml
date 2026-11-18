@@ -9,7 +9,11 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: "Re-download all archives and rebuild everything"
+        description: "Run even if the manifest is unchanged (still downloads only changed or unresolved archives)"
+        type: boolean
+        default: false
+      full:
+        description: "Download every archive (very slow, use once at most)"
         type: boolean
         default: false
 
@@ -38,7 +42,7 @@ jobs:
           cache: npm
       - run: npm ci
       - id: check
-        run: node src/index.ts check ${{ inputs.force && '--force' || '' }}
+        run: node src/index.ts check ${{ (inputs.force || inputs.full) && '--force' || '' }}
 
   build:
     needs: check
@@ -69,7 +73,7 @@ jobs:
           STEAM_USERNAME: ${{ secrets.USERNAME }}
           STEAM_PASSWORD: ${{ secrets.PASSWORD }}
           LANGUAGES: ${{ vars.LANGUAGES }}
-        run: node src/index.ts update ${{ inputs.force && '--force' || '' }}
+        run: node src/index.ts update ${{ inputs.full && '--full' || inputs.force && '--force' || '' }}
 
       - name: Commit data and images
         run: |
