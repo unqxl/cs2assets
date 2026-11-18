@@ -1,0 +1,56 @@
+name: Market images
+
+# Optional upgrade of image links to the Steam economy CDN. Budgeted and rate-limit aware:
+# see src/market.ts. New items without market listings simply stay on the static CDN / self-hosted link.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Maximum number of market requests"
+        default: "40"
+
+concurrency:
+  group: cs2assets
+  cancel-in-progress: false
+
+jobs:
+  market:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - name: Resolve images
+        id: market
+        env:
+          LANGUAGES: ${{ vars.LANGUAGES }}
+        run: node src/index.ts market --budget=${{ inputs.budget || '40' }}
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "chore(images): market lookups"
+          git push
+
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.market.outputs.changed == 'true'
+        with:
+          path: dist
+      - id: deploy
+        if: steps.market.outputs.changed == 'true'
+        uses: actions/deploy-pages@v4
