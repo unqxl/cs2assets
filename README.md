@@ -5,6 +5,10 @@
 A single repository for Counter-Strike 2 data: game text and translations, item images and a ready-made JSON API.
 It replaces three separate repositories (CSGO-API, counter-strike-file-tracker, counter-strike-image-tracker) with one fast pipeline.
 
+## API
+
+Base URL: `https://unqxl.github.io/cs2assets/api/<lang>/`, for example `https://unqxl.github.io/cs2assets/api/en/skins.json`. The docs page at `https://unqxl.github.io/cs2assets/` is generated from the API files on every build (`src/docs.ts`).
+
 ## How it works
 
 1. **check** (every 5 minutes) — anonymous Steam login, compares the depot manifest id with `data/manifestId.txt`. If nothing changed, it finishes in seconds.
