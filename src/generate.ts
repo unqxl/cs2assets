@@ -11,7 +11,9 @@ const run = (script: string, languages: string) =>
 
 // Runs the vendored CSGO-API generator against data/ and assembles the GitHub Pages site (API + generated docs page) in dist/.
 export const generateApi = (languages = API_LANGUAGES) => {
-    fs.rmSync(path.join(GENERATOR, "public", "api"), { recursive: true, force: true });
+    const output = path.join(GENERATOR, "public", "api");
+    fs.rmSync(output, { recursive: true, force: true });
+    fs.mkdirSync(output, { recursive: true });
 
     run("update.js", languages);
     run("group.js", languages);
