@@ -81,8 +81,9 @@ export const planDownloads = (
             const { archiveIndex } = dir.tree[file];
             if (archiveIndex === EMBEDDED_ARCHIVE) continue;
 
-            // Archives are also fetched for images that have no link yet, so unresolved items heal on the next run.
-            const unresolved = !images[imageKeyFromVpk(file)];
+            // Archives are also fetched for images tracked without a link (null in images.json), so they heal on the next run.
+            const key = imageKeyFromVpk(file);
+            const unresolved = Object.hasOwn(images, key) && !images[key];
             if (changed(archiveIndex) || unresolved) archives.add(archiveIndex);
         }
     }
