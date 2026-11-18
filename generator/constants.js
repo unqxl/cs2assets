@@ -1,0 +1,172 @@
+import * as path from "node:path";
+
+// Inputs are produced by the cs2assets pipeline in ../data (override with CS2_INPUT_DIR).
+export const INPUT_DIR = process.env.CS2_INPUT_DIR || path.resolve(import.meta.dirname, "../data");
+
+// Self-hosted images and thumbnails live in this repository.
+export const RAW_BASE =
+    process.env.CS2_RAW_BASE || "https://raw.githubusercontent.com/unqxl/cs2assets/main/images";
+
+const getLanguageUrl = language => `${INPUT_DIR}/csgo_${language}.json`;
+
+export const getImageUrl = path => {
+    return `${RAW_BASE}/${path}_png.png`;
+};
+
+export const getImageUrlSvg = path => {
+    return `${RAW_BASE}/${path}.svg`;
+};
+
+export const ITEMS_GAME_URL = `${INPUT_DIR}/items_game.json`;
+
+export const IMAGES_BASE_URL =
+    "https://raw.githubusercontent.com/steamdatabase/gametracking-csgo/108f1682bf7eeb1420caaf2357da88b614a7e1b0/csgo/pak01_dir/resource/flash/";
+
+export const CSGO_ENGLISH_URL = `${INPUT_DIR}/csgo_english.json`;
+
+export const IMAGES_INVENTORY_URL = `${INPUT_DIR}/images.json`;
+
+export const DEFAULT_GENERATED_URL = `${INPUT_DIR}/default_generated.json`;
+
+export const LANGUAGES_URL = [
+    {
+        language: "english",
+        folder: "en",
+        url: getLanguageUrl("english"),
+    },
+    {
+        language: "schinese",
+        folder: "zh-CN",
+        url: getLanguageUrl("schinese"),
+    },
+    {
+        language: "portuguese (Brazil)",
+        folder: "pt-BR",
+        url: getLanguageUrl("brazilian"),
+    },
+    {
+        language: "russian",
+        folder: "ru",
+        url: getLanguageUrl("russian"),
+    },
+    {
+        language: "spanish",
+        folder: "es-ES",
+        url: getLanguageUrl("spanish"),
+    },
+    {
+        language: "bulgarian",
+        folder: "bg",
+        url: getLanguageUrl("bulgarian"),
+    },
+    {
+        language: "czech",
+        folder: "cs",
+        url: getLanguageUrl("czech"),
+    },
+    {
+        language: "danish",
+        folder: "da",
+        url: getLanguageUrl("danish"),
+    },
+    {
+        language: "dutch",
+        folder: "nl",
+        url: getLanguageUrl("dutch"),
+    },
+    {
+        language: "finnish",
+        folder: "fi",
+        url: getLanguageUrl("finnish"),
+    },
+    {
+        language: "french",
+        folder: "fr",
+        url: getLanguageUrl("french"),
+    },
+    {
+        language: "german",
+        folder: "de",
+        url: getLanguageUrl("german"),
+    },
+    {
+        language: "greek",
+        folder: "el",
+        url: getLanguageUrl("greek"),
+    },
+    {
+        language: "hungarian",
+        folder: "hu",
+        url: getLanguageUrl("hungarian"),
+    },
+    {
+        language: "italian",
+        folder: "it",
+        url: getLanguageUrl("italian"),
+    },
+    {
+        language: "japanese",
+        folder: "ja",
+        url: getLanguageUrl("japanese"),
+    },
+    {
+        language: "korean",
+        folder: "ko",
+        url: getLanguageUrl("koreana"),
+    },
+    {
+        language: "spanish (Latin America)",
+        folder: "es-MX",
+        url: getLanguageUrl("latam"),
+    },
+    {
+        language: "norwegian",
+        folder: "no",
+        url: getLanguageUrl("norwegian"),
+    },
+    {
+        language: "polish",
+        folder: "pl",
+        url: getLanguageUrl("polish"),
+    },
+    {
+        language: "portuguese",
+        folder: "pt-PT",
+        url: getLanguageUrl("portuguese"),
+    },
+    {
+        language: "romanian",
+        folder: "ro",
+        url: getLanguageUrl("romanian"),
+    },
+    {
+        language: "swedish",
+        folder: "sv",
+        url: getLanguageUrl("swedish"),
+    },
+    {
+        language: "tchinese",
+        folder: "zh-TW",
+        url: getLanguageUrl("tchinese"),
+    },
+    {
+        language: "thai",
+        folder: "th",
+        url: getLanguageUrl("thai"),
+    },
+    {
+        language: "turkish",
+        folder: "tr",
+        url: getLanguageUrl("turkish"),
+    },
+    {
+        language: "ukrainian",
+        folder: "uk",
+        url: getLanguageUrl("ukrainian"),
+    },
+    {
+        language: "vietnamese",
+        folder: "vi",
+        url: getLanguageUrl("vietnamese"),
+    },
+];
