@@ -7,7 +7,8 @@
 
 ## API
 
-Базовый URL: `https://unqxl.github.io/cs2assets/api/<lang>/`, например `https://unqxl.github.io/cs2assets/api/en/skins.json`. Страница документации `https://unqxl.github.io/cs2assets/` генерируется из файлов API при каждой сборке (`src/docs.ts`).
+- Базовый URL: `https://unqxl.github.io/cs2assets/api/<lang>/`, например `https://unqxl.github.io/cs2assets/api/en/skins.json`.
+- Документация: `https://unqxl.github.io/cs2assets/`, которая генерируется из файлов API при каждой сборке (`src/docs.ts`).
 
 ## Как это работает
 
