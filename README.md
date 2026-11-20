@@ -7,7 +7,8 @@ It replaces three separate repositories (CSGO-API, counter-strike-file-tracker, 
 
 ## API
 
-Base URL: `https://unqxl.github.io/cs2assets/api/<lang>/`, for example `https://unqxl.github.io/cs2assets/api/en/skins.json`. The docs page at `https://unqxl.github.io/cs2assets/` is generated from the API files on every build (`src/docs.ts`).
+- Base URL: `https://unqxl.github.io/cs2assets/api/<lang>/`, for example `https://unqxl.github.io/cs2assets/api/en/skins.json`.
+- Documentation: `https://unqxl.github.io/cs2assets/`, which is generated from the API files on every build (`src/docs.ts`).
 
 ## How it works
 
