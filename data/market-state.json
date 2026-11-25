@@ -1,5 +1,166 @@
 {
   "cooldownUntil": 1795549454124,
   "failures": 7,
-  "items": {}
+  "items": {
+    "econ/tournaments/singapore2026/singapore2026_pass": {
+      "tries": 1,
+      "lastTry": 1795611379884
+    },
+    "econ/tournaments/singapore2026/singapore2026_pass_pack": {
+      "tries": 1,
+      "lastTry": 1795611381492
+    },
+    "econ/tournaments/major_credits": {
+      "tries": 1,
+      "lastTry": 1795611383168
+    },
+    "econ/weapon_cases/crate_sticker_pack_jackass_capsule": {
+      "tries": 1,
+      "lastTry": 1795611384808
+    },
+    "econ/music_kits/alleycvt_01": {
+      "tries": 1,
+      "lastTry": 1795611386409
+    },
+    "econ/music_kits/arcando_01": {
+      "tries": 1,
+      "lastTry": 1795611388004
+    },
+    "econ/music_kits/djdiesel_01": {
+      "tries": 1,
+      "lastTry": 1795611389597
+    },
+    "econ/music_kits/fool_01": {
+      "tries": 1,
+      "lastTry": 1795611391203
+    },
+    "econ/music_kits/noisestorm_01": {
+      "tries": 1,
+      "lastTry": 1795611392792
+    },
+    "econ/music_kits/pegboardnerds_01": {
+      "tries": 1,
+      "lastTry": 1795611394421
+    },
+    "econ/music_kits/tristam_braken_01": {
+      "tries": 1,
+      "lastTry": 1795611396062
+    },
+    "econ/music_kits/vicetone_01": {
+      "tries": 1,
+      "lastTry": 1795611397654
+    },
+    "econ/default_generated/weapon_bayonet_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611399246
+    },
+    "econ/default_generated/weapon_bayonet_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611400859
+    },
+    "econ/default_generated/weapon_bayonet_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611402462
+    },
+    "econ/default_generated/weapon_bayonet_aq_forced_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611404052
+    },
+    "econ/default_generated/weapon_bayonet_aq_forced_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611405650
+    },
+    "econ/default_generated/weapon_bayonet_aq_forced_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611407261
+    },
+    "econ/default_generated/weapon_bayonet_hy_ddpat_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611408850
+    },
+    "econ/default_generated/weapon_bayonet_hy_ddpat_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611410549
+    },
+    "econ/default_generated/weapon_bayonet_hy_ddpat_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611412151
+    },
+    "econ/default_generated/weapon_bayonet_hy_forest_boreal_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611413753
+    },
+    "econ/default_generated/weapon_bayonet_hy_forest_boreal_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611415411
+    },
+    "econ/default_generated/weapon_bayonet_hy_forest_boreal_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611417022
+    },
+    "econ/default_generated/weapon_bayonet_hy_webs_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611418614
+    },
+    "econ/default_generated/weapon_bayonet_hy_webs_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611420212
+    },
+    "econ/default_generated/weapon_bayonet_hy_webs_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611421806
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611423562
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611425166
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611426845
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_forced_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611428846
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_forced_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611430451
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_forced_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611432083
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_oiled_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611433693
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_oiled_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611435323
+    },
+    "econ/default_generated/weapon_knife_butterfly_aq_oiled_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611436976
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_ddpat_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611438570
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_ddpat_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795611440234
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_ddpat_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795611441833
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_forest_boreal_knife_light": {
+      "tries": 1,
+      "lastTry": 1795611443436
+    }
+  }
 }
