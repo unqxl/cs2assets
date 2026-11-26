@@ -161,6 +161,166 @@
     "econ/default_generated/weapon_knife_butterfly_hy_forest_boreal_knife_light": {
       "tries": 1,
       "lastTry": 1795611443436
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_forest_boreal_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696473471
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_forest_boreal_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696475115
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_webs_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696476728
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_webs_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696478331
+    },
+    "econ/default_generated/weapon_knife_butterfly_hy_webs_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696479932
+    },
+    "econ/default_generated/weapon_knife_canis_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696481568
+    },
+    "econ/default_generated/weapon_knife_canis_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696483170
+    },
+    "econ/default_generated/weapon_knife_canis_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696484759
+    },
+    "econ/default_generated/weapon_knife_cord_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696486352
+    },
+    "econ/default_generated/weapon_knife_cord_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696487999
+    },
+    "econ/default_generated/weapon_knife_cord_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696489600
+    },
+    "econ/default_generated/weapon_knife_css_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696491222
+    },
+    "econ/default_generated/weapon_knife_css_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696492823
+    },
+    "econ/default_generated/weapon_knife_css_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696494419
+    },
+    "econ/default_generated/weapon_knife_css_hy_ddpat_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696496178
+    },
+    "econ/default_generated/weapon_knife_css_hy_ddpat_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696497764
+    },
+    "econ/default_generated/weapon_knife_css_hy_ddpat_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696499421
+    },
+    "econ/default_generated/weapon_knife_css_hy_webs_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696501038
+    },
+    "econ/default_generated/weapon_knife_css_hy_webs_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696502637
+    },
+    "econ/default_generated/weapon_knife_css_hy_webs_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696504230
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696505842
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696507443
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696509055
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_forced_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696510714
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_forced_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696512312
+    },
+    "econ/default_generated/weapon_knife_falchion_aq_forced_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696513902
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_ddpat_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696515507
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_ddpat_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696517117
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_ddpat_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696518726
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_forest_boreal_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696520329
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_forest_boreal_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696521920
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_forest_boreal_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696523588
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_webs_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696525200
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_webs_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696526790
+    },
+    "econ/default_generated/weapon_knife_falchion_hy_webs_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696528436
+    },
+    "econ/default_generated/weapon_knife_flip_aq_blued_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696530064
+    },
+    "econ/default_generated/weapon_knife_flip_aq_blued_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696531727
+    },
+    "econ/default_generated/weapon_knife_flip_aq_blued_knife_heavy": {
+      "tries": 1,
+      "lastTry": 1795696533340
+    },
+    "econ/default_generated/weapon_knife_flip_aq_forced_knife_light": {
+      "tries": 1,
+      "lastTry": 1795696534969
+    },
+    "econ/default_generated/weapon_knife_flip_aq_forced_knife_medium": {
+      "tries": 1,
+      "lastTry": 1795696536580
     }
   }
 }
